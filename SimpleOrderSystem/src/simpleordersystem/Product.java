@@ -1,0 +1,40 @@
+package simpleordersystem;
+
+import java.util.ArrayList;
+
+public class Product
+{
+  private int code;
+  private int price;
+  private String description;
+  private ArrayList<LineItem> items;
+  public Product(int code, String description, int price)
+  {
+	items= new ArrayList<LineItem>();
+    this.code = code;
+    this.price = price;
+    this.description = description;
+  }
+  
+  public int getPrice()
+  {
+    return price;
+  }
+
+  public String getDescription()
+  {
+    return description;
+  }
+
+  public int getCode()
+  {
+    return code;
+  }
+  
+  
+  public void addLineItem(int quantity)
+  {
+	  
+  }
+  
+}

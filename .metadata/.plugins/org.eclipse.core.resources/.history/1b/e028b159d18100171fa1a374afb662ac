@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+// observers pull data fro the soubject 
+public class Subject {
+	private int changed_var;
+	private ArrayList<Observer_Me> observers;
+	
+	public Subject(){
+		changed_var = 12;
+		observers = new ArrayList<>();
+		}
+	
+	public void change(int val){
+		changed_var = val;
+		notify_Ob();
+	}
+	
+	private void notify_Ob(){
+		
+	}
+	
+	
+	public void addObserver(Observer_Me o){
+		observers.add(o);
+	}
+	
+	public 
+}

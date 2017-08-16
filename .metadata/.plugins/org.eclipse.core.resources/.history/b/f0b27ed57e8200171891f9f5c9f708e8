@@ -1,0 +1,6 @@
+
+public class RemoteControll {
+	Command[] onc;
+	Command[] offc;
+	
+}

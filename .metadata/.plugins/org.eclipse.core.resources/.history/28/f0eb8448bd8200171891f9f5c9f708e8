@@ -1,0 +1,9 @@
+
+public class LightOffC implements Command {
+
+	@Override
+	public void execute() {
+		
+	}
+	
+}

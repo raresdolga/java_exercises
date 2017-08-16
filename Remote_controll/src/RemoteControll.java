@@ -1,0 +1,27 @@
+
+public class RemoteControll {
+	Command[] onc;
+	Command[] offc;
+	public RemoteControll(int size){
+		onc = new Command[size];
+		offc = new Command[size];
+		Command nC = new LightOnC();
+		for(int i = 0; i < size; i ++){
+			onc[i] = nC;
+			offc[i] = nC;
+		}	
+	}
+	public void setCommand(int index, Command off, Command on){
+		onc[index] = on;
+		offc[index] = off;
+	}
+	
+	public void onPressed(int index){
+		onc[index].execute();
+	}
+	
+	public void ofPressed(int index){
+		offc[index].execute();
+	}
+	
+}
